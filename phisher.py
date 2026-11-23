@@ -109,7 +109,7 @@ features_list = [
 
 ]
 def load_model():
-    data = arff.loadarff(r"C:\Users\Princ\OneDrive\Desktop\phishing+websites\Training Dataset.arff")
+    data = arff.loadarff(r"Training Dataset.arff")
     df = pd.DataFrame(data[0])
     model = RandomForestClassifier()
     df = df.apply(lambda col: col.map(lambda x: int(x.decode('utf-8')) if isinstance(x, bytes) else int(x)))
@@ -180,5 +180,6 @@ tk.Button(btn_frame,text="🔍 Check URL",bg="#22c55e",fg="white",
 tk.Button(btn_frame,text="📧 Scan Gmail",bg="#3b82f6",fg="white",
           command=lambda: threading.Thread(target=scan_gmail).start()
           ).grid(row=0,column=1,padx=10)
+
 
 root.mainloop()
