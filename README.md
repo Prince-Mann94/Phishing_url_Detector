@@ -1,3 +1,6 @@
+## 🖥️ Application Preview
+
+![Phishing URL Detector](screenshots/application.png)
 # 🛡️ Phishing URL Detection System
 
 A Machine Learning based cybersecurity application that analyzes URLs and predicts whether they are **Legitimate, Suspicious, or Phishing**.
