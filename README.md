@@ -103,8 +103,8 @@ phishing-url-detection/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/Prince-Mann94/Phishing_Detection.git
-cd Phishing_Detection
+git clone https://github.com/Prince-Mann94/Phishing_url_Detector.git
+cd Phishing_url_Detector
 ```
 
 ### 2. Create a virtual environment
